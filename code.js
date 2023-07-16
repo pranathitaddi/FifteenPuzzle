@@ -86,7 +86,8 @@ function keyboard(){
               swapTiles("cell"+row_space+column_space,"cell"+row_space+(column_space-1));
               check(row_space,(column_space-1));
               check(row_space,column_space);
-              
+              onClickfunc();
+              check_space();
            break;
            case 38:
             //   alert('Up key');
