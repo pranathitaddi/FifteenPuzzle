@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie-edge">
+            <link rel="stylesheet" href="./dist/css/styles.css">
+            <title>Fifteen Puzzle</title>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+            <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet"> -->
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+
+            <!-- Fonts from https://fonts.google.com/ -->
+            <!-- Color Theme by https://coolors.co/ -->
+    </head>
+    <body>
+        <div class="container-app">
+            <div class="title">
+                <h1>Fifteen Puzzle</h1>
+            </div>
+            <div class="controls">
+                <button class="new-game" onclick="shuffle()">New Game</button>
+                <div class="measures">
+                    <div class="timer">
+                        <h5><span id="mins">00</span>:<span id="secs">00</span></h5>
+                    </div>
+                    <div class="moves">
+                        <h5 id="nomoves">0</h5>
+                        <span id="moves">&nbsp Moves</span>
+                    </div>
+                </div>
+            </div>
+            <div class="board" style="display: table;">
+                <div id="row1" style="display: table-row;">
+                    <div id="cell11" onClick="clickTile(1,1);" class="tile1">1</div>
+                    <div id="cell12" onClick="clickTile(1,2);" class="tile2">2</div>
+                    <div id="cell13" onClick="clickTile(1,3);" class="tile3">3</div>
+                    <div id="cell14" onClick="clickTile(1,4);" class="tile4">4</div>
+                </div>
+                <div id="row2" style="display: table-row;">
+                    <div id="cell21" onClick="clickTile(2,1);" class="tile5">5</div>
+                    <div id="cell22" onClick="clickTile(2,2);" class="tile6">6</div>
+                    <div id="cell23" onClick="clickTile(2,3);" class="tile7">7</div>
+                    <div id="cell24" onClick="clickTile(2,4);" class="tile8">8</div>
+                </div>
+                <div id="row3" style="display: table-row;">
+                    <div id="cell31" onClick="clickTile(3,1);" class="tile9">9</div>
+                    <div id="cell32" onClick="clickTile(3,2);" class="tile10">10</div>
+                    <div id="cell33" onClick="clickTile(3,3);" class="tile11">11</div>
+                    <div id="cell34" onClick="clickTile(3,4);" class="tile12">12</div>
+                </div>
+                <div id="row4" style="display: table-row;">
+                    <div id="cell41" onClick="clickTile(4,1);" class="tile13">13</div>
+                    <div id="cell42" onClick="clickTile(4,2);" class="tile14">14</div>
+                    <div id="cell43" onClick="clickTile(4,3);" class="tile15">15</div>
+                    <div id="cell44" onClick="clickTile(4,4);" class="tile16"></div>
+                </div>
+            </div>
+            <button onclick="toggle()" id="timer_toggle" class="play-pause">Pause</button>
+            <hr class="line">
+            <div class="leaders">
+                <h1>Leadership</h1>
+            </div>
+            <ul id="leader_board">
+
+            </ul>
+        </div>
+        <script src="code.js"></script>  
+    </body>
+</html>
+
+
+<!-- https://dev.to/shantanu_jana/create-a-simple-stopwatch-using-javascript-3eoo - for stopwatch timer -->
+<!-- file:///C:/Users/prana/Praxx_Philes/KTJ_Assg2/FifteenGame/index.html - my website -->
+<!-- file:///C:/Users/prana/Praxx_Philes/KTJ_Assg2/Kshitij_Assignment2.pdf - assignment pdf -->
+<!-- https://15puzzle.netlify.app/ - reference 1 -->
+<!-- https://lorecioni.github.io/fifteen-puzzle-game/ - reference 2 -->

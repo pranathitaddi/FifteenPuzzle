@@ -1,0 +1,120 @@
+.controls{
+    margin: 3.5%;
+    width: 100%;
+    padding: 1%;
+    border-radius: 20px;
+    background-color: $backcolor2;
+    margin: 1%;
+    height: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    *{
+        margin: 2%;
+    }
+    .new-game{
+        background-color: $backcolor4;
+        width: 20%;
+        height: 50%;
+        margin-left: 5%;
+        border-radius: 10px;
+        border: transparent;
+        font-size: 20px;
+        color: $green1;
+        font-family: 'Montserrat', sans-serif;
+        &:hover{
+            background-color: $purple1;
+            transform: scale(1.02);
+            transition: 0.12s;
+            color: $purple2;
+        }
+    }
+    .measures{
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        border-radius: 10px;
+        *{
+            background-color: transparent;
+            margin: 10px;
+            font-size: 20px;
+        }
+        .timer{
+            background-color: $backcolor3;
+            border-radius: 5px;
+            margin: 0;
+            margin-right: 50px;
+            span{
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+        .moves{
+            background-color: $backcolor3;
+            border-radius: 5px;
+            margin: 0;
+            height: 43.2px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-start;
+            span{
+                font-family: 'Montserrat', sans-serif;
+            }
+            h5{
+                font-family: 'Montserrat', sans-serif;
+            }
+        }
+
+    }
+}
+
+#nomoves{
+    margin: 0;
+}
+#moves{
+    margin-left: 0;
+    margin-right: 0;
+
+}
+
+
+@media only screen and (max-width: 630px) {
+    .controls{
+        height: 60px;
+        .new-game{
+            font-size: 11px;
+        }
+        .measures{
+            *{
+                margin: 5px;
+                font-size: 15px;
+            }
+            .timer{
+                background-color: $backcolor3;
+                border-radius: 5px;
+                margin: 0;
+                margin-right: 25px;
+            }
+            .moves{
+                background-color: $backcolor3;
+                border-radius: 5px;
+                margin: 0;
+                height: 27.6px;
+                padding: 5px;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+    
+        }
+    }
+    
+    
+}
+

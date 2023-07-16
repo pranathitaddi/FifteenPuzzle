@@ -1,0 +1,19 @@
+.leaders{
+    h1{
+        background-color: transparent;
+        margin: 2%;
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        color: $headingcolor1;
+        background-color: transparent;
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .leaders{    
+        h1{
+            font-size: 50px;
+        }   
+    }
+}

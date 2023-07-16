@@ -1,0 +1,233 @@
+.controls {
+  margin: 3.5%;
+  width: 100%;
+  padding: 1%;
+  border-radius: 20px;
+  background-color: #CED0CE;
+  margin: 1%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.controls * {
+  margin: 2%;
+}
+.controls .new-game {
+  background-color: #475841;
+  width: 20%;
+  height: 50%;
+  margin-left: 5%;
+  border-radius: 10px;
+  border: transparent;
+  font-size: 20px;
+  color: #c5d3c0;
+  font-family: "Montserrat", sans-serif;
+}
+.controls .new-game:hover {
+  background-color: #5a547b;
+  transform: scale(1.02);
+  transition: 0.12s;
+  color: #e0ddf1;
+}
+.controls .measures {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 10px;
+}
+.controls .measures * {
+  background-color: transparent;
+  margin: 10px;
+  font-size: 20px;
+}
+.controls .measures .timer {
+  background-color: #9FB8AD;
+  border-radius: 5px;
+  margin: 0;
+  margin-right: 50px;
+}
+.controls .measures .timer span {
+  font-family: "Montserrat", sans-serif;
+}
+.controls .measures .moves {
+  background-color: #9FB8AD;
+  border-radius: 5px;
+  margin: 0;
+  height: 43.2px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.controls .measures .moves span {
+  font-family: "Montserrat", sans-serif;
+}
+.controls .measures .moves h5 {
+  font-family: "Montserrat", sans-serif;
+}
+
+#nomoves {
+  margin: 0;
+}
+
+#moves {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media only screen and (max-width: 630px) {
+  .controls {
+    height: 60px;
+  }
+  .controls .new-game {
+    font-size: 11px;
+  }
+  .controls .measures * {
+    margin: 5px;
+    font-size: 15px;
+  }
+  .controls .measures .timer {
+    background-color: #9FB8AD;
+    border-radius: 5px;
+    margin: 0;
+    margin-right: 25px;
+  }
+  .controls .measures .moves {
+    background-color: #9FB8AD;
+    border-radius: 5px;
+    margin: 0;
+    height: 27.6px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+.board {
+  margin: 3.5%;
+  width: 100%;
+  padding: 1%;
+  border-radius: 20px;
+  background-color: #CED0CE;
+  margin: 1%;
+  height: 600px;
+  margin: 5px 0px;
+}
+.board div div {
+  display: table-cell;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: #9FB8AD;
+  padding: 3%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media only screen and (max-width: 630px) {
+  .board {
+    height: 300px;
+  }
+  .board div {
+    width: 50px;
+    height: 50px;
+  }
+}
+.leaders h1 {
+  background-color: transparent;
+  margin: 2%;
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  color: #475841;
+  background-color: transparent;
+  font-size: 80px;
+}
+
+@media only screen and (max-width: 630px) {
+  .leaders h1 {
+    font-size: 50px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  background-color: #E6E8E6;
+  margin: 0;
+  padding: 0;
+  font-family: "Lilita One", cursive;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container-app {
+  width: 600px;
+  margin-left: 25%;
+  margin-right: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  margin: 3.5%;
+  margin-bottom: 0.5%;
+  width: 100%;
+  background-color: #CED0CE;
+  padding: 1%;
+  border-radius: 20px;
+}
+.title h1 {
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  color: #475841;
+  background-color: transparent;
+  font-size: 80px;
+}
+
+.play-pause {
+  background-color: rgb(22, 136, 98);
+  margin-left: 5%;
+  border-radius: 10px;
+  border: transparent;
+  font-size: 20px;
+  padding: 2%;
+  margin: 2%;
+  width: 100%;
+  background-color: #475841;
+  color: #c5d3c0;
+  font-family: "Montserrat", sans-serif;
+}
+.play-pause:hover {
+  background-color: #5a547b;
+  transform: scale(1.005);
+  transition: 0.12s;
+  color: #e0ddf1;
+}
+
+.line {
+  width: 100%;
+  margin-top: 10%;
+}
+
+@media only screen and (max-width: 630px) {
+  .container-app {
+    width: 300px;
+  }
+  .title h1 {
+    font-size: 50px;
+  }
+}/*# sourceMappingURL=styles.css.map */

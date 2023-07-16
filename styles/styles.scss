@@ -1,0 +1,89 @@
+@import "./var.scss";
+@import "./controls.scss";
+@import "./board.scss";
+@import "./leaders.scss";
+
+
+// @import "./filepath"
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    background-color: $backcolor1;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lilita One', cursive;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-app{
+    width: 600px;
+    // margin-top: 1vh;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    margin: 3.5%;
+    margin-bottom: 0.5%;
+    width: 100%;
+    background-color: $backcolor2;
+    padding: 1%;
+    border-radius: 20px;
+    h1{
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        color: $headingcolor1;
+        background-color: transparent;
+        font-size: 80px;
+    }
+}
+
+.play-pause{
+    background-color: rgb(22, 136, 98);
+    margin-left: 5%;
+    border-radius: 10px;
+    border: transparent;
+    font-size: 20px;
+    padding: 2%;
+    margin: 2%;
+    width: 100%;
+    background-color: $backcolor4;
+    color: $green1;
+    font-family: 'Montserrat', sans-serif;
+        &:hover{
+            background-color: $purple1;
+            transform: scale(1.005);
+            transition: 0.12s;
+            color: $purple2;
+        }
+}
+
+.line{
+    width: 100%;
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 630px) {
+    .container-app{
+        width: 300px;
+    }
+    .title{    
+        h1{
+            font-size: 50px;
+        }   
+    }
+}
+
